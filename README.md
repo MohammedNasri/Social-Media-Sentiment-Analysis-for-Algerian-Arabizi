@@ -1,6 +1,6 @@
 This repo contains my approach in solving the Algerian dialect sentiment analysis problem. 
 
-The competition posed several challenges:
+The problem posed several challenges:
 
 1- Data collection of Algerian dialect "Arabizi" from social media using web scraping.
 
@@ -10,7 +10,7 @@ The competition posed several challenges:
 
 4- The text is in latin characters (Arabizi) not Arabic.
  
- #Solution
+ # Solution
  
 If we analyze the Algerian dialect, we would find that it is a melting pot of many languages: Arabic by a big margin (root of words, grammar, etc ...), Amazigh words (which is shared among all Maghrebi dialects), French (also shared with some Maghrebi dialects), and to a certain extent some English and Italian.
 
