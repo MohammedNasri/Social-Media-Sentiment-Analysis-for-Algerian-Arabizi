@@ -16,7 +16,7 @@ If we analyze the Algerian dialect, we would find that it is a melting pot of ma
 
 Because of this diversity, using an ensemble of multiple pretrained language models fine-tuned on the same dataset would surely yield higher accuracy since every model would contribute to the language understanding by a bit. But how is it possible to take advantage of Arabic pretrained model and the dataset is in latin letters, one might ask.
 
-For that reason, I trained an independent transformer model for transliterating from Latin letters to Algerian using a dataset that I personally harvested and annotated. This dataset contains around 17k commonly used Algerian words in both Arabic letters and Arabizi. More on the dataset later.
+For that reason, I trained an independent transformer model for transliterating from Latin letters to Algerian using a dataset contains around 17k commonly used Algerian words in both Arabic letters and Arabizi. More on the dataset later.
 
 After trying several pretrained models from the huggingface hub, and through lots trial and error, I determined that the combination of bert-base-uncased, alongside with moha/arabert_c19 (multi-dialect Arabic model trained on 1.5M COVID19 tweets, paper: https://arxiv.org/pdf/2105.03143.pdf) and camembert gave the best results. However, Camembert's contribution to the ensemble was not significant: I disposed of it in favor of the other two models for the sake of less training time.
 
